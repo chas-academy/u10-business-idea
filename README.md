@@ -1,4 +1,5 @@
 # u10-business-idea
-A tribute to Stackoverflow
+
+Developer's site
 
 Emil Babra and Juan Pablo Orellana
