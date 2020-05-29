@@ -1,0 +1,25 @@
+.login {
+   display: flex;
+        align-items: center;
+        flex-direction: column;
+}
+
+.login>form {
+    max-width: 400px;
+    display: flex;
+        flex-direction: column;
+}
+
+.landing-btn {
+    background-color: #24873A;
+    color: #ffffff;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 50px;
+    height: 30px;
+    font-size: 20px;
+}
