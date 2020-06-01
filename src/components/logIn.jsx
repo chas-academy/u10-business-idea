@@ -8,7 +8,7 @@ class LogIn extends React.Component {
             password: '',
             error: false,
             errorMessage: '',
-            user: ''
+            user: sessionStorage.getItem('userID')
         }
     }
 
@@ -21,41 +21,49 @@ class LogIn extends React.Component {
         });
     }
 
-    handleSubmit = (event) => {
-            fetch(this.apiCall, {
+    handleSubmit = async () => {
+        const apiCall = await fetch(this.apiCall, {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
-                    'content-type': 'application/json'
+                    'Content-type': 'application/json'
                 },
                 body: JSON.stringify({
                     email: this.state.email,
                     password: this.state.password
                 })
-            }).then(res => res.json())
-                .then(data => console.log(data))
-
+            })
+        const data = await apiCall.json()
+        if (apiCall.status === 200) {
+            sessionStorage.setItem('userID', data._id)
+        } else {
+            sessionStorage.clear()
+            sessionStorage.setItem('error', true)
+            sessionStorage.setItem('errMessage', data.message)
+        }
     }
 
     render() {
-        const { email, password } = this.state;
+        const { email, password, user } = this.state;
 
-        return (
-            <div className="login">
-                <h2>Sign In</h2>
-                <form onSubmit={this.handleSubmit}>
-                    <label htmlFor="email">E-mail: </label>
-                    <input type="text" value={email} onChange={this.handleChange} id="email"/>
-
-                    <label htmlFor="password">Password: </label>
-                    <input type="text" value={password} onChange={this.handleChange} id="password" type="password"/>
-
-                    <input type="submit" value="Sign In" className="landing-btn"/>
-                </form>
-
-                <p>No account yet? Register a new one <a href="#">here!</a></p>
-            </div>
-        )
+            return (
+                <div className="login">
+                    <h2>Sign In</h2>
+                    <form onSubmit={this.handleSubmit}>
+                        <label htmlFor="email">E-mail: </label>
+                        <input type="text" value={email} onChange={this.handleChange} name="email" id="email"/>
+    
+                        <label htmlFor="password">Password: </label>
+                        <input type="text" value={password} onChange={this.handleChange} name="password" id="password" type="password"/>
+    
+                        <input type="submit" value="Sign In" className="landing-btn"/>
+                    </form>
+    
+                    <p>No account yet? Register a new one <a href="https://www.fuckreact.com">here!</a></p>
+                <div>{user}</div>
+                </div>
+            )
+        
     }
 }
 
