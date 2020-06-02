@@ -6,9 +6,8 @@ class LogIn extends React.Component {
         this.state = {
             email: '',
             password: '',
-            error: false,
-            errorMessage: '',
-            user: sessionStorage.getItem('userID')
+            error: sessionStorage.getItem('error'),
+            errorMessage: sessionStorage.getItem('errMessage')
         }
     }
 
@@ -33,36 +32,58 @@ class LogIn extends React.Component {
                     password: this.state.password
                 })
             })
+        console.log('Helloi')
         const data = await apiCall.json()
         if (apiCall.status === 200) {
             sessionStorage.setItem('userID', data)
         } else {
-            sessionStorage.clear()
             sessionStorage.setItem('error', true)
             sessionStorage.setItem('errMessage', data.message)
         }
     }
 
     render() {
-        const { email, password, user } = this.state;
+        const { email, 
+                password, 
+                error, 
+                errorMessage } = this.state;
 
             return (
                 <div className="login">
                     <h2>Sign In</h2>
                     <form onSubmit={this.handleSubmit}>
                         <label htmlFor="email">E-mail: </label>
-                        <input type="text" value={email} onChange={this.handleChange} name="email" id="email"/>
+                        <input 
+                            type="text" 
+                            value={email} 
+                            onChange={this.handleChange} 
+                            name="email" 
+                            id="email"
+                            required/>
     
                         <label htmlFor="password">Password: </label>
-                        <input type="text" value={password} onChange={this.handleChange} name="password" id="password" type="password"/>
+                        <input 
+                            type="password" 
+                            value={password} 
+                            onChange={this.handleChange} 
+                            name="password" 
+                            id="password" 
+                            required/>
     
                         <input type="submit" value="Sign In" className="landing-btn"/>
                     </form>
     
                     <p>No account yet? Register a new one <a href="https://www.fuckreact.com">here!</a></p>
-                <div>{user}</div>
+                    { error ?  
+                    <div className="error">
+                        <h3>{errorMessage}</h3>
+                    </div> 
+                    : <div></div> }
+                    
                 </div>
             )
+
+
         
     }
 }
