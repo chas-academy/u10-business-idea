@@ -35,7 +35,7 @@ class LogIn extends React.Component {
             })
         const data = await apiCall.json()
         if (apiCall.status === 200) {
-            sessionStorage.setItem('userID', data._id)
+            sessionStorage.setItem('userID', data)
         } else {
             sessionStorage.clear()
             sessionStorage.setItem('error', true)

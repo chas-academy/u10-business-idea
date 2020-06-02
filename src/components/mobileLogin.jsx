@@ -7,7 +7,7 @@ class MobileLanding extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            hasAccount: true
+            hasAccount: true,
         }
     }
 
@@ -17,7 +17,7 @@ class MobileLanding extends React.Component {
         if (hasAccount) {
             return (
                 <div>
-                    <LogIn handleLogin={this.props.handleLogin} />
+                    <LogIn />
                 </div>
             )
         } else {

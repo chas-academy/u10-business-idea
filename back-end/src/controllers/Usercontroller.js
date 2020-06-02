@@ -28,7 +28,11 @@ module.exports = {
         try {
             const { userId } = req.params;
             const user = await User.findById(userId);
-            return res.status(200).json(user);
+            return res.status(200).json({
+                firstName: user.firstName,
+                lastName: user.lastName,
+                email: user.email
+            });
 
         } catch (error) {
             return res.status(400).json({
@@ -44,7 +48,7 @@ module.exports = {
 
             if (user) {
                 if (password === user.password) {
-                    return res.status(200).json(user);
+                    return res.status(200).json(user._id);
                 } else {
                     return res.status(401).json({
                         message: 'Username and Password does not match.'
