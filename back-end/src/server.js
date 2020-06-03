@@ -11,7 +11,6 @@ const MongoDB = 'mongodb+srv://BabryzDev:1dJEwPdI0IxiLcT7@privatecluster-dfosw.m
 app.use(express.json());
 app.use(cors());
 
-
 app.get('/', (req, res) => {
     return res.send('<h1>Hello from express</h1>');
 })
@@ -19,6 +18,7 @@ app.get('/', (req, res) => {
 app.get('/users/:userId', UserController.getById);
 
 app.post('/register', UserController.store);
+
 
 app.post('/login', UserController.login);
 

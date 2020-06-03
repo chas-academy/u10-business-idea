@@ -7,7 +7,7 @@ class App extends React.Component {
     super();
     this.state = {
       screenWidth: 400,
-      loggedIn: false,
+      loggedIn: sessionStorage.getItem('userID') ? true : false,
       user: {
 
       }
@@ -17,24 +17,31 @@ class App extends React.Component {
   apiCall = `http://localhost:8000/users/${sessionStorage.getItem('userID')}`;
 
   getUser = async () => {
-    const apiCall = await fetch(this.apiCall)
-    const data = await apiCall.json()
-    if (apiCall.status === 200) {
-      this.setState({
-        ...this.state,
-        user: data
-      })
+    if (this.state.loggedIn && sessionStorage.getItem('userID')) {
+      const apiCall = await fetch(this.apiCall)
+      const data = await apiCall.json()
+      if (apiCall.status === 200) {
+        this.setState({
+          ...this.state,
+          user: data
+        })
+      }
     }
   }
 
+  checkLogin = () => {
+    this.setState({
+      ...this.state,
+      loggedIn: true
+    })
+  } 
+
   componentDidMount() {
-    if (sessionStorage.getItem('userID')) {
-      this.setState({
-        ...this.state,
-        loggedIn: true
-      })
-      this.getUser();
-    }
+    this.getUser();
+  }
+
+  componentDidUpdate() {
+    this.getUser();
   }
 
   render() {
@@ -50,8 +57,9 @@ class App extends React.Component {
             <p>{user.lastName}</p>
             <p>{user.email}</p>
           </div>
-           :
-          <MobileLogin /> }
+          
+           : <div><h1>{this.state.testData}</h1>
+          <MobileLogin checkLogin={this.checkLogin} /></div> }
         </div>
       )
     } else if (screenWidth > 500 && screenWidth < 900) {

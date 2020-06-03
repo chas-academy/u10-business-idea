@@ -6,8 +6,8 @@ class LogIn extends React.Component {
         this.state = {
             email: '',
             password: '',
-            error: sessionStorage.getItem('error'),
-            errorMessage: sessionStorage.getItem('errMessage')
+            error: false,
+            errorMessage: ''
         }
     }
 
@@ -20,26 +20,39 @@ class LogIn extends React.Component {
         });
     }
 
-    handleSubmit = async () => {
-        const apiCall = await fetch(this.apiCall, {
+    getUser = async () => {
+        const body = JSON.stringify({
+            email: this.state.email,
+            password: this.state.password
+        })
+        const apiCall = await 
+            fetch(this.apiCall, {
                 method: 'POST',
                 headers: {
-                    'Accept': 'application/json',
                     'Content-type': 'application/json'
                 },
-                body: JSON.stringify({
-                    email: this.state.email,
-                    password: this.state.password
-                })
+                body: body
             })
-        console.log('Helloi')
+        console.log('From function')
         const data = await apiCall.json()
         if (apiCall.status === 200) {
+            sessionStorage.clear();
             sessionStorage.setItem('userID', data)
+            this.props.checkLogin()
         } else {
-            sessionStorage.setItem('error', true)
-            sessionStorage.setItem('errMessage', data.message)
+            sessionStorage.clear();
+            this.setState({
+                ...this.state,
+                error: true,
+                errorMessage: data.message
+            })
         }
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        console.log('From handle');
+        this.getUser().catch(err => (sessionStorage.setItem('funcErr', err)))
     }
 
     render() {
@@ -51,7 +64,7 @@ class LogIn extends React.Component {
             return (
                 <div className="login">
                     <h2>Sign In</h2>
-                    <form onSubmit={this.handleSubmit}>
+                    <form onSubmit={(event) => this.handleSubmit(event)}>
                         <label htmlFor="email">E-mail: </label>
                         <input 
                             type="text" 
@@ -83,8 +96,6 @@ class LogIn extends React.Component {
                 </div>
             )
 
-
-        
     }
 }
 

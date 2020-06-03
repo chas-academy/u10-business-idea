@@ -17,7 +17,7 @@ class MobileLanding extends React.Component {
         if (hasAccount) {
             return (
                 <div>
-                    <LogIn />
+                    <LogIn checkLogin={this.props.checkLogin} />
                 </div>
             )
         } else {
