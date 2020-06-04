@@ -62,7 +62,7 @@ general, so whatever you can imagine, he can probably work out how to build it f
 He believes that you should not spend too much time thinking about what you want to do, it’s better to just try and see what works, this way of working makes him very productive but he can in many cases be perceived as  a bit short with his patience with people because of this.
 
 
-##Users stories/Features 
+## Users stories/Features 
 
 As a user, i need _ _ _ _, So that _ _ _ reason
 
