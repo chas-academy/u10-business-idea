@@ -69,21 +69,21 @@ As a user, i need _ _ _ _, So that _ _ _ reason
 
 As a user I need to be able to:
 
-Login and logout so everyone can see who I am and save my projects.
-See and edit my own profile so I can show who I am and see my current information.
-Scroll through or search on projects so I can find ideas/projects I’m interested in.
-See details on projects so I can see if I like the idea and concept
-See other users profiles so I can see if it’s a person that I want to collaborate with.
-Ask to join projects so I can start collaborating with others.
-Start a project or idea of my own so I can find other people that wants to collaborate.
-Approve other users request to join my project so we can create a group.
-Publish my own project so others members can see it
-Save my project in a draft folder before i publish it so i can make changes
-Erase a published project if I have a reason for it 
-Upload documents, files or images to my project so other members can see them
-Add a contact to contact list* 
-Modify own contact list*
-Send messages to other users*
+-Login and logout so everyone can see who I am and save my projects.
+-See and edit my own profile so I can show who I am and see my current information.
+-Scroll through or search on projects so I can find ideas/projects I’m interested in.
+-See details on projects so I can see if I like the idea and concept
+-See other users profiles so I can see if it’s a person that I want to collaborate with.
+-Ask to join projects so I can start collaborating with others.
+-Start a project or idea of my own so I can find other people that wants to collaborate.
+-Approve other users request to join my project so we can create a group.
+-Publish my own project so others members can see it
+-Save my project in a draft folder before i publish it so i can make changes
+-Erase a published project if I have a reason for it 
+-Upload documents, files or images to my project so other members can see them
+-Add a contact to contact list* 
+-Modify own contact list*
+-Send messages to other users*
 
 
 * === If we have time
