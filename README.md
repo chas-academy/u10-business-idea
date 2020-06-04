@@ -5,13 +5,13 @@ Developer's site
 Emil Babra and Juan Pablo Orellana
 
 ## Design
-#### All the designs for this project can be found at: 
-#### https://www.figma.com/file/6CRpZPH2LcxBtDZWDtgRBa/Colaborate-Page?node-id=0%3A1
+### All the designs for this project can be found at: 
+### https://www.figma.com/file/6CRpZPH2LcxBtDZWDtgRBa/Colaborate-Page?node-id=0%3A1
 
 
 ## Personas 
 
-###Persona 1:
+### Persona 1:
 
 Name: Christopher
 
@@ -39,7 +39,7 @@ In the same sense that he doesn’t stay on an idea for an app for longe if he s
 
 
 
-###Persona 2
+### Persona 2
 
 Name: Gregory
 
@@ -60,3 +60,29 @@ general, so whatever you can imagine, he can probably work out how to build it f
 
 “Productivity first”
 He believes that you should not spend too much time thinking about what you want to do, it’s better to just try and see what works, this way of working makes him very productive but he can in many cases be perceived as  a bit short with his patience with people because of this.
+
+
+##Users stories/Features 
+
+As a user, i need _ _ _ _, So that _ _ _ reason
+
+As a user I need to be able to:
+
+Login and logout so everyone can see who I am and save my projects.
+See and edit my own profile so I can show who I am and see my current information.
+Scroll through or search on projects so I can find ideas/projects I’m interested in.
+See details on projects so I can see if I like the idea and concept
+See other users profiles so I can see if it’s a person that I want to collaborate with.
+Ask to join projects so I can start collaborating with others.
+Start a project or idea of my own so I can find other people that wants to collaborate.
+Approve other users request to join my project so we can create a group.
+Publish my own project so others members can see it
+Save my project in a draft folder before i publish it so i can make changes
+Erase a published project if I have a reason for it 
+Upload documents, files or images to my project so other members can see them
+Add a contact to contact list* 
+Modify own contact list*
+Send messages to other users*
+
+
+* === If we have time
