@@ -9,6 +9,10 @@ Emil Babra and Juan Pablo Orellana
 - All the designs and prototypes can be found at: 
 - https://www.figma.com/file/6CRpZPH2LcxBtDZWDtgRBa/Colaborate-Page?node-id=0%3A1
 
+## Planing
+
+- We used Kanban as our agile metode with daily scrums and weekly sprint for the project.
+
 
 ## Budget
 - Work hours: 40 * 7 = 280h, 
