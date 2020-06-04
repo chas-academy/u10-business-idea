@@ -11,7 +11,7 @@ Emil Babra and Juan Pablo Orellana
 
 ## Personas 
 
-Persona 1:
+###Persona 1:
 
 Name: Christopher
 
@@ -39,19 +39,7 @@ In the same sense that he doesn’t stay on an idea for an app for longe if he s
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-Persona 2
+###Persona 2
 
 Name: Gregory
 
@@ -63,8 +51,8 @@ Dreams and goals: One day being able to code whatever makes him happy. And finan
 
 Personality:
 	
-	“Lives on the safe side but wishes he didn’t”
-	Gregory in many cases tries to take the safe route which is why he has a full time job. 	He does however dream about coding whatever makes him happy but does not want 	to take to big of a risk for it.
+“Lives on the safe side but wishes he didn’t”
+Gregory in many cases tries to take the safe route which is why he has a full time job. 	He does however dream about coding whatever makes him happy but does not want 	to take to big of a risk for it.
 
 “Not so creative but very smart”
 He isn’t to creative so coming up with brand new ideas himself would be kinda hard, 	he is on the other hand very good at both programming and problem solving in
