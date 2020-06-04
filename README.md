@@ -10,6 +10,14 @@ Emil Babra and Juan Pablo Orellana
 - https://www.figma.com/file/6CRpZPH2LcxBtDZWDtgRBa/Colaborate-Page?node-id=0%3A1
 
 
+## Budget
+- Work hours: 40 * 7 = 280h, 
+- Emil: 280h * 140 sek/hour = 39 200 sek
+- Juan: 280h * 140 sek/hour = 39 200 sek
+- Salary total: 78 400 sek
+- consulting fee: 280h * 80 sek/hour =  22 400 sek
+- Total Cost: 100 800 sek
+
 ## Personas 
 
 ### Persona 1:
