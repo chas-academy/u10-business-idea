@@ -28,7 +28,7 @@ Emil Babra and Juan Pablo Orellana
 - consulting fee: 280h * 80 sek/hour =  22 400 sek
 - Total Cost: 100 800 sek
 
-## Personas 
+## Personas / User Cases
 
 ### Persona 1:
 
@@ -99,9 +99,7 @@ As a user I need to be able to:
 - Save my project in a draft folder before i publish it so i can make changes
 - Erase a published project if I have a reason for it 
 - Upload documents, files or images to my project so other members can see them
-- Add a contact to contact list* 
-- Modify own contact list*
-- Send messages to other users*
+- Add a contact to contact list
+- Modify own contact list
+- Send messages to other users
 
-
-*===If we have time
