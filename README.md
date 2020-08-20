@@ -17,7 +17,7 @@ Emil Babra and Juan Pablo Orellana
 
 ## Planing
 
-- We used Kanban as our agile method with daily scrums and weekly sprint for the project.
+- We used Scrum as our agile method with daily scrums, weekly sprints for the project and kanban boards as a method for planing.
 
 
 ## Budget
