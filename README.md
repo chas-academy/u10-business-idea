@@ -26,7 +26,10 @@ Emil Babra and Juan Pablo Orellana
 - Juan: 280h * 140 sek/hour = 39 200 sek
 - Salary total: 78 400 sek
 - consulting fee: 280h * 80 sek/hour =  22 400 sek
-- Total Cost: 100 800 sek
+- : 100 800 sek
+- 1 year hosting: 219 sek/month + 125 sek starting fee.
+- Domain name (projectmanager.com): 119 sek/year
+- Totalt cost: 103 672 sek for first year. 
 
 ## Personas / User Cases
 
