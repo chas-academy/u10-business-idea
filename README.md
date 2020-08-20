@@ -29,7 +29,7 @@ Emil Babra and Juan Pablo Orellana
 - : 100 800 sek
 - 1 year hosting: 219 sek/month + 125 sek starting fee.
 - Domain name (projectmanager.com): 119 sek/year
-- Totalt cost: 103 672 sek for first year. 
+- Totalt cost: 103 672 sek.
 
 ## Personas / User Cases
 
