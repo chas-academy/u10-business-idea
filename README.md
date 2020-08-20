@@ -9,6 +9,12 @@ Emil Babra and Juan Pablo Orellana
 - All the designs and prototypes can be found at: 
 - https://www.figma.com/file/6CRpZPH2LcxBtDZWDtgRBa/Colaborate-Page?node-id=0%3A1
 
+## Tools that we will use
+- ReactJS (front-end)
+- NodeJS (back-end)
+- ExpressJS
+- MongoDB (database)
+
 ## Planing
 
 - We used Kanban as our agile method with daily scrums and weekly sprint for the project.
